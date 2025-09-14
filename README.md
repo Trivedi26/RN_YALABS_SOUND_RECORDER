@@ -1,8 +1,12 @@
 🎙️ YALABS Audio Recorder
 
-A React Native audio recording app built with Expo, allowing users to record, pause/resume, stop, and play multiple recordings with live visual feedback. This project demonstrates a production-ready mobile recording experience with background support and interruption handling.
+## A React Native audio recording app built with Expo, allowing users to record, pause/resume, stop, and play multiple recordings with live visual feedback. This project demonstrates a production-ready mobile recording experience with background support and interruption handling.
 
-Features
+## Demo
+
+[Watch the demo video](assets/demo.mp4)
+
+## Features
 
 Record audio with high-quality settings
 
@@ -24,37 +28,34 @@ Save multiple recordings with a scrollable list
 
 Clean dark-themed UI
 
-Screenshots
-
-(Include screenshots if submitting as a demo)
 
 Recording screen with timer & meter
 
 List of saved recordings
 
-Installation
+## Installation
 
-Clone the repository
+## Clone the repository
 
 git clone https://github.com/yourusername/yallabs-audio-recorder.git
 cd yallabs-audio-recorder
 
 
-Install dependencies
+## Install dependencies
 
 npm install
 # or
 yarn install
 
 
-Run the app
+## Run the app
 
 expo start
 
 
 Use Expo Go on your iOS or Android device, or an emulator.
 
-Usage
+# Usage
 
 Open the app.
 
@@ -98,16 +99,7 @@ package.json
 tsconfig.json
 README.md
 
-Future Enhancements
 
-Add scrubbing/seek bar for playback.
-
-Enable rename/delete recordings.
-
-Add share functionality using expo-sharing.
-
-Visual waveform display instead of a simple bar.
-
-License
+## License
 
 This project is for demonstration purposes for YALABS assignment. No license restrictions.# RN_YALABS_SOUND_RECORDER
