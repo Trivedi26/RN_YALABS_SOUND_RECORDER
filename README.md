@@ -1,50 +1,113 @@
-# Welcome to your Expo app 👋
+🎙️ YALABS Audio Recorder
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native audio recording app built with Expo, allowing users to record, pause/resume, stop, and play multiple recordings with live visual feedback. This project demonstrates a production-ready mobile recording experience with background support and interruption handling.
 
-## Get started
+Features
 
-1. Install dependencies
+Record audio with high-quality settings
 
-   ```bash
-   npm install
-   ```
+Pause and resume recording at any time
 
-2. Start the app
+Stop recording and save files
 
-   ```bash
-   npx expo start
-   ```
+Play saved recordings
 
-In the output, you'll find options to open the app in a
+Live recording timer
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Audio level meter for visual feedback
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Maintain recordings in the background
 
-## Get a fresh project
+Handle interruptions such as phone calls or other apps
 
-When you're ready, run:
+Save multiple recordings with a scrollable list
 
-```bash
-npm run reset-project
-```
+Clean dark-themed UI
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Screenshots
 
-## Learn more
+(Include screenshots if submitting as a demo)
 
-To learn more about developing your project with Expo, look at the following resources:
+Recording screen with timer & meter
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+List of saved recordings
 
-## Join the community
+Installation
 
-Join our community of developers creating universal apps.
+Clone the repository
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/yourusername/yallabs-audio-recorder.git
+cd yallabs-audio-recorder
+
+
+Install dependencies
+
+npm install
+# or
+yarn install
+
+
+Run the app
+
+expo start
+
+
+Use Expo Go on your iOS or Android device, or an emulator.
+
+Usage
+
+Open the app.
+
+Press Record to start recording.
+
+Use Pause/Resume to temporarily stop and continue recording.
+
+Press Stop to finish the recording.
+
+Saved recordings appear in a list; tap Play to listen.
+
+Recordings continue if the app goes to the background.
+
+Dependencies
+
+React Native
+
+Expo SDK
+
+expo-av – for audio recording and playback
+
+@expo/vector-icons – for UI icons
+
+Technical Details
+
+Background recording: Enabled using staysActiveInBackground in Audio.setAudioModeAsync.
+
+Interruption handling: Uses InterruptionModeIOS.DoNotMix and InterruptionModeAndroid.DuckOthers.
+
+Metering: Live audio levels captured via recording.setOnRecordingStatusUpdate.
+
+Timer: Tracks recording duration with a live timer.
+
+Multiple recordings: Saved in a list with unique names (Recording 1, Recording 2, etc.) and played independently.
+
+Folder Structure
+/assets
+  └─ icons/
+App.tsx
+package.json
+tsconfig.json
+README.md
+
+Future Enhancements
+
+Add scrubbing/seek bar for playback.
+
+Enable rename/delete recordings.
+
+Add share functionality using expo-sharing.
+
+Visual waveform display instead of a simple bar.
+
+License
+
+This project is for demonstration purposes for YALABS assignment. No license restrictions.# RN_YALABS_SOUND_RECORDER
